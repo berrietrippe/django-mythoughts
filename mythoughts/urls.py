@@ -18,6 +18,7 @@ from django.contrib import admin
 from list import views
 from django.contrib.auth import views as auth_views
 from django.views.static import serve
+from django.conf import settings
 
 urlpatterns = [
     url(r'^home/$', views.quote_list, name='quote_list'),
