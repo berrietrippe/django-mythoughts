@@ -30,4 +30,8 @@ urlpatterns = [
     url(r'^quote/delete/(?P<pk>\d+)/$', views.quote_delete, name='quote_delete'),
     url(r'^admin/', admin.site.urls),
     url(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT}),
+
+    # api
+    url(r'^api/v1/thoughts/$', views.get_quotes, name='get_quotes'),
+    url(r'^api/v1/thoughts/(?P<pk>[0-9]+)$', views.get_single_quote, name='get_single_quote')
 ]
