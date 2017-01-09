@@ -165,6 +165,7 @@ Sections
 }
 
 .thought h6 {
+  color:rgb(190, 34, 0);
   display: none;
   position:absolute;
   left:13px;

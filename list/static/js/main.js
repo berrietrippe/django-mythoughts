@@ -10,4 +10,6 @@ $(document).ready(function() {
   $('.thought').click(function(){
     $(this).toggleClass('extend');
   });
+
+  $('.thought:first-child').addClass('extend');
 });
