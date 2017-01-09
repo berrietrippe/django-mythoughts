@@ -1,0 +1,26 @@
+{% extends 'list/base.html' %}
+{% load staticfiles %}
+{% block content %}
+<div id="add_thoughts" class="">
+  <form method="post" action="">
+    {% csrf_token %}
+    <input id="quote_text" type="text" name="text" placeholder="Type your thoughts out here...">
+    <!-- <input type="submit" value="OK"> -->
+</form>
+</div>
+
+
+<div id="thoughts">
+  {% for quote in quotes %}
+
+      <div class="thought">
+        "{{ quote.text }}"
+        <h6>{{ quote.author }} - {{quote.added_date}}</h6>
+        <!-- {{ quote.author }} -->
+        <a href="{% url 'quote_delete' pk=quote.pk %}"><img class="trash" src="{% static '/img/trash.png' %}"  alt=""></a>
+
+      </div>
+
+  {% endfor %}
+</div>
+{% endblock content %}

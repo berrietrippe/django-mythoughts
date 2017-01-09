@@ -28,6 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.pythonanywhere.com', '.herokuapp.com']
 
 
+LOGIN_REDIRECT_URL = '/home'
+
 # Application definition
 
 INSTALLED_APPS = [

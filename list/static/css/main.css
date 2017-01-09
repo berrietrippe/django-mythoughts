@@ -1,0 +1,365 @@
+/*
+Style by Berrie Trippe 2016
+
+Basic style properties used in many websites
+
+*/
+html, body {
+    text-align: center;
+    width:100%;
+    height:100%;
+    font-family: 'Work Sans', sans-serif;
+    margin:0px;
+}
+
+a {
+  color:inherit;
+  text-decoration: none;
+ }
+
+.visible {
+    transition: 1.5s;
+    -moz-transition: 1.5s;
+    -webkit-transition: 1.5s;
+    -o-transition: 1.5s;
+}
+
+h1 {
+    font-size:75px;
+}
+
+h2 {
+    font-size:50px;
+}
+
+p{
+    font-size:20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+strong {
+    color:#000000;
+}
+
+.left {
+    float:left;
+}
+
+.right {
+    float:right;
+}
+
+.center {
+    margin:0px auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.center_horizontal {
+    margin:0px auto;
+}
+
+.center_vertical {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wrapper {
+    width:100%;
+    max-width:1200px;
+    margin:0px auto;
+}
+
+.container {
+    width:100%;
+    height:100%;
+}
+
+.full_page {
+    width:100%;
+    height:100%;
+}
+
+.full_width {
+    width:100%;
+}
+
+.container {
+  box-sizing:border-box;
+  padding:20px;
+  width:100%;
+  height:100%;
+  max-width:1000px;
+}
+/*
+Sections
+*/
+
+#menu {
+  text-align: left;
+  box-sizing:border-box;
+  height:70px;
+  background-color: #ffffff;
+  border-bottom:0.5px solid #949494;
+  line-height: 70px;
+
+  box-shadow: 0px 0px 5px #888888;
+  /*border:1px solid black;*/
+}
+
+.menu-container {
+  line-height: 70px;
+  overflow: hidden;
+  box-sizing:border-box;
+  width:100%;
+  height:100%;
+  max-width:1000px;
+  margin:0px auto;
+  padding:0px 20px;
+}
+
+#menu #logo {
+  width:30px;
+  display: inline-block;
+  line-height: 70px;
+  margin-bottom:7.5px
+}
+
+#menu h1 {
+  display: inline-block;
+  line-height: 70px;
+  margin:0px;
+  font-size:20px;
+  font-weight: 400;
+  color:#000000;
+}
+
+#logout {
+  float:right;
+  display: inline-block;
+  padding-right:20px;
+}
+
+.thought {
+  box-sizing:border-box;
+  font-weight:200;
+  font-size:23px;
+  text-align: left;
+  vertical-align: top;
+  box-shadow: 0px 2px 5px #888888;
+  padding:13px;
+  cursor:pointer;
+  transition: 0.2s;
+  -moz-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.thought h6 {
+  display: none;
+  position:absolute;
+  left:13px;
+  bottom:5px;
+  font-size:10px;
+  font-weight:100;
+}
+
+.thought.extend h6 {
+  display:block;
+}
+
+.thought.extend {
+  padding-bottom:40px;
+}
+
+
+#thoughts .thought {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+#thoughts {
+  padding:10px;
+  /* Prevent vertical gaps */
+  /*line-height: 3;*/
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  column-count: 3;
+  column-gap: 20px; }
+
+
+@media (max-width: 1500px) {
+  #thoughts {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3; } }
+@media (max-width: 1200px) {
+  #thoughts {
+    -moz-column-count: 2;
+    -webkit-column-count: 2 ;
+    column-count: 2; } }
+@media (max-width: 800px) {
+  #thoughts {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1; } }
+@media (max-width: 400px) {
+  #thoughts {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1; } }
+.thought {
+  display: none;
+  position: relative;
+  margin: 0px;
+  display: inline-block;
+  width: 23.00%;
+  margin: 0.5%;
+  padding-right:30px;
+  margin-bottom:20px }
+
+.thought .trash {
+  opacity: 0;
+  width:15px;
+  position: absolute;
+  bottom:5px;
+  right:5px;
+  transition: 0.2s;
+  -moz-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.thought:hover .trash {
+  opacity: 0.7;
+}
+
+#add_thoughts {
+  box-sizing:border-box;
+  padding:10px;
+  width:100%;
+  height:90px;
+
+}
+
+#add_thoughts form {
+  line-height:normal;
+  box-sizing:border-box;
+  /*padding-right:50px;*/
+  width:100%;
+  height:100%;
+}
+
+#add_thoughts form input {
+  display: inline-block;
+}
+
+#add_thoughts form input#quote_text {
+  box-sizing: border-box;
+  padding:10px;
+  vertical-align: top;
+  width: 100%;
+  height:100%;
+}
+
+
+
+
+#login {
+  position: relative;
+  overflow: hidden;
+}
+
+#login .login_form {
+  overflow: hidden;
+  width:100%;
+  max-width:400px;
+}
+
+
+#login #logo {
+  width:30px;
+  display: inline-block;
+  line-height: 70px;
+  margin-bottom:7.5px
+}
+
+#login h1 {
+  display: inline-block;
+  line-height: 70px;
+  margin:0px;
+  font-size:20px;
+  font-weight: 400;
+  color:#000000;
+}
+
+
+#login h2 {
+  font-size:30px;
+  font-weight:200;
+}
+
+#login label {
+  float:left;
+  font-weight: 100;
+}
+
+#login input {
+  float:right;
+}
+
+#login button {
+  float:right;
+}
+
+
+
+
+
+
+/*tablet*/
+@media only screen and (max-width: 1200px) {
+}
+
+/*Small tablets*/
+@media only screen and (max-width: 1000px) {
+
+  #login label {
+    float:none;
+  }
+
+  #login input {
+    float:none;
+  }
+
+  #login button {
+    float:none;
+  }
+
+
+}
+
+/*mobile*/
+@media only screen and (max-width: 767px) {
+
+
+
+    .left: {
+        float:none;
+    }
+
+    .right: {
+        float:none;
+    }
+}
