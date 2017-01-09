@@ -27,4 +27,5 @@ urlpatterns = [
     url(r'^quote/(?P<pk>\d+)/$', views.quote_detail, name='quote_detail'),
     url(r'^quote/delete/(?P<pk>\d+)/$', views.quote_delete, name='quote_delete'),
     url(r'^admin/', admin.site.urls),
+    url(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT}),
 ]
